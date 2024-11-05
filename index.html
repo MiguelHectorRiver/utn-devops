@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive</title>
+    <style>
+        @media screen and (max-width: 1200px){img{width:100%}}
+        .textoAdaptable{font-size: 5vw}
+        h1{font-size:10vw}
+        *{
+            box-sizing: border-box;
+        }
+        .izquierda {
+            background-color: #65d8d8;
+            padding: 20px;
+            float:left;
+            width:20%;
+        }
+        .principal {
+            background-color: #f7f79a;
+            padding: 20px;
+            float:left;
+            width:60%;
+        }
+        .derecha {
+            background-color: #fca590;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+        @media screen and (max-width:800px){
+            .izquierda, .principal, .derecha{width:100%;}
+        }
+    </style>
+</head>
+<!-- Para "responsive" se utilizan las técnicas: Viewport y Media Queries-->
+
+<body>
+        <h1>Diseño Web Responsive</h1>
+        <hr>
+        <h2>Imágenes adaptables</h2>
+        <img src="./Apuestas_online.gif">
+    
+        <h3>Conjunto de Imágenes</h3>
+    <picture>
+        <source srcset="./CelularLaptop.jpeg" media="(max-width: 550px)">
+        <source srcset="./LaptopFlor.jpeg" media="(max-width: 600px)">
+        <source srcset="./SoporteHelp.jpeg" media="(max-width: 1200px)">
+        <img src="./Ventana_Living.jpeg">
+    </picture>
+
+    <h2>Textos adaptables</h2>
+    <p class="textoAdaptable">Cada transacción desde la cotización, la venta, el recibo de los productos en el sitio, y la posterior conformidad del cliente deberían ser registradas de alguna manera, además se debería poder conseguir datos cuantitativos precisos de cada proceso. 
+    </p>
+    <p> Tanto los valores presupuestados como la capacidad de financiamiento por las ventas deben ser informaciones accesibles para el análisis de mejores alternativas. </p>
+
+
+    <h2>Contenedores</h2>
+    <div class="izquierda">
+        <p>Menú izquierdo</p>
+
+    </div>
+    <div class="principal">
+        <p>Contenido principal</p>
+
+    </div>
+    <div class="derecha">
+        <p>Barra lateral</p>
+
+    </div>
+    <header>
+
+    </header>
+
+<main>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+    <footer>
+
+
+    </footer>
+
+
+</body>
+</html>
